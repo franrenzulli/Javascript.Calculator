@@ -1,0 +1,143 @@
+body{
+  background-image: linear-gradient(to right, #C92323, #C9237B);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 15vh 0;
+}
+
+.mainContainer{
+  width: 600px;
+  height: 750px;
+  border-radius: 30px;
+  background-color: rgba(255,255,255,0.4);
+  box-sizing: border-box;
+  padding: 40px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+  grid-template-rows: 110px 100px 100px 100px 100px;
+}
+
+.expandedContainer{
+  width: 930px;
+  height: 750px;
+  border-radius: 30px;
+  background-color: rgba(255,255,255,0.4);
+  box-sizing: border-box;
+  padding: 40px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 21% 21% 21% 15% 15%;
+  grid-template-rows: 110px 100px 100px 100px 100px;
+  transition: 1s;
+
+}
+
+.numberSection{
+  grid-column: 1/5;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #2B2B26;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.expandedNumberSection{
+  grid-column: 1/6;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  background-color: #2B2B26;
+  display: flex;
+  align-items: center;
+  padding-left: 40px;
+}
+
+#numberCounter{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+  color: white;
+}
+
+#imput1, #imput2{
+  font-size: 30px;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#divSum{
+  grid-row: 3/5;
+  grid-column: 4/5;
+}
+
+#divEqual{
+  grid-row: 5/7;
+  grid-column: 4/5;
+  border-bottom-right-radius: 20px;
+}
+
+#divZero{
+  grid-row: 6/7;
+  grid-column: 1/3;
+  border-bottom-left-radius: 20px;
+}
+
+
+#divPoint{
+  display: none;
+  grid-row: 4/6;
+  grid-column: 5/6;
+}
+
+#divModule{
+  display: none;
+  width: 100px;
+  grid-row: 2/4;
+  grid-column: 5/6;
+  width: 100%;
+}
+
+#divMinimize{
+  display: none;
+}
+
+#divExponentiation{
+  display: none;
+}
+
+.specialButtons button{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.60);
+  border: 1px solid rgba(0, 0, 0, 0.60);
+}
+
+.specialButtons button:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.8s;
+}
+
+.regularButtons button{
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 10px;
+}
+
+.regularButtons button:hover{
+  cursor: pointer;
+  background-color: rgba(255,255,255,0.3);
+  transition: 0.8s;
+}
+
+.mainContainer button{
+  color: white;
+  font-size: 30px;
+  border-radius: 10px;
+}
